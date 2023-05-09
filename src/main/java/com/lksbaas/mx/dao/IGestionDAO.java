@@ -39,6 +39,6 @@ public interface IGestionDAO<T> {
 	 * @param params - PArametros a filtrar
 	 * @return {@link String} JSON generico
 	 */
-	String getJSON(String query, Object[] params);
+	String exeJSON(String query, Object[] params);
 
 }

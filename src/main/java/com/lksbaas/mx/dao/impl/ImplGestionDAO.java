@@ -109,7 +109,7 @@ public class ImplGestionDAO<T> implements IGestionDAO<T> {
 	 * @return {@link String} JSON generico
 	 */
 	@Override
-	public String getJSON(String query, Object[] params) {
+	public String exeJSON(String query, Object[] params) {
 		return jdbcTemplate.queryForObject(query, new ResponseJsonMapper(), params);
 	}
 
